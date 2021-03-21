@@ -13,7 +13,9 @@ const Footer = ()=> {
   </div>
   <div className= "col text-center">
   <div className={classes.headerStyle}>
+  <Link href="/messages">
   <h1>Messages</h1>
+  </Link>
     </div>
   </div>
 </div>
