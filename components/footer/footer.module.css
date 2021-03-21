@@ -1,0 +1,7 @@
+.headerStyle {
+    background-color: aquamarine;
+}
+.headerStyle:hover {
+    background-color: rgb(2, 53, 36);
+    color: wheat;
+}
