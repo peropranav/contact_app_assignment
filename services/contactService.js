@@ -1,5 +1,5 @@
 const axios = require('axios');
-let apiUrl = "http://3.133.87.196:3000/api";
+let apiUrl = "http://3.133.87.196:4040/api";
 const getContactList = async () => {
     try {
         let response = await axios.get(`${apiUrl}/contact`);
