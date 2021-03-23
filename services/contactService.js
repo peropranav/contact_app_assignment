@@ -1,8 +1,8 @@
 const axios = require('axios');
-
+let apiUrl = "http://3.133.87.196:3000/api";
 const getContactList = async () => {
     try {
-        let response = await axios.get('http://localhost:4040/api/contact');
+        let response = await axios.get(`${apiUrl}/contact`);
         return response;
     } catch (err) {
         throw err;
@@ -10,7 +10,7 @@ const getContactList = async () => {
 }
 const addContact = async (data) => {
     try {
-        let response = await axios.post('http://localhost:4040/api/contact',data);
+        let response = await axios.post(`${apiUrl}/contact`,data);
         return response;
     } catch (err) {
         throw err;
@@ -18,7 +18,7 @@ const addContact = async (data) => {
 }
 const updateContact = async (data) => {
     try {
-        let response = await axios.put('http://localhost:4040/api/contact',data);
+        let response = await axios.put(`${apiUrl}/contact`,data);
         return response;
     } catch (err) {
         throw err;
@@ -26,7 +26,7 @@ const updateContact = async (data) => {
 }
 const getContactById = async (id) => {
     try {
-        let response = await axios.get(`http://localhost:4040/api/contact/${id}`);
+        let response = await axios.get(`${apiUrl}/contact/${id}`);
         return response;
     } catch (err) {
         throw err;
@@ -34,7 +34,7 @@ const getContactById = async (id) => {
 }
 const sendMessageToContact = async (data) => {
     try {
-        let response = await axios.post(`http://localhost:4040/api/message`,data);
+        let response = await axios.post(`${apiUrl}/message`,data);
         return response;
     } catch (err) {
         throw err;
@@ -42,7 +42,7 @@ const sendMessageToContact = async (data) => {
 }
 const getMessages = async () =>{
     try {
-        let response = await axios.get(`http://localhost:4040/api/message`);
+        let response = await axios.get(`${apiUrl}/message`);
         return response;
     } catch (err) {
         throw err;
